@@ -25,7 +25,7 @@ jobs:
     steps:
       - shell: bash
         run: |
-          expr 1 + 1 > output.log
+          expr 67 + 127 > output.log
       - name: Upload output file
         uses: actions/upload-artifact@v3
         with:
@@ -36,5 +36,4 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: output-log-file
-            run:|
-                cat output.log 
+            
